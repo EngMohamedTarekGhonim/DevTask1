@@ -1,0 +1,72 @@
+﻿@model Core.Infrastracture.Dtos.DepartmentViewModel
+
+<form method="post" asp-action="Create" enctype="multipart/form-data">
+    <div class="border p-3">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group row">
+            <h2 class="text-info pl-3">Add Department</h2>
+        </div>
+
+       <div class="row">
+            <div class="col-8">
+
+                <div class="form-group row">
+                    <div class="col-4">
+                            <label asp-for="DepartmentName"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="DepartmentName" class="form-control" />
+                        <span asp-validation-for="DepartmentName" class="text-danger"></span>
+                    </div>
+                </div>
+                <br />
+                <div class="col-md-6">  
+                    <div class="form-group">  
+                        <label asp-for="DepartmentLogoFormFile" class="control-label"></label>  
+                        <div class="custom-file">  
+                            <input asp-for="DepartmentLogoFormFile" class="custom-file-input" id="customFile">  
+                        </div>  
+                        <span asp-validation-for="DepartmentLogoFormFile" class="text-danger"></span>  
+                    </div>  
+                </div>  
+                <br />
+                 <div class="form-group row">
+                    <div class="col-4">
+                    <label asp-for="MainDepartmentId" class="control-label"></label>
+                    </div>
+                    <div class="col-8">
+                    <select asp-for="MainDepartmentId" class ="form-control" asp-items="ViewBag.MainDepartmentId">
+                    <span asp-validation-for="MainDepartmentId" class="text-danger"></span>
+                    </select>
+                    </div>
+                 </div>
+                <br />
+                <div class="form-group row">
+                    <div class="col-8 offset-4 row">
+
+                        <div class="col">
+                            <input type="submit" class="btn btn-info w-100" value="Create"/>
+                        </div>
+
+                        <div class="col">
+                             <a asp-action="Index" class="btn btn-success w-100"><i class="fas fa-sign-out-alt"></i> Back</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+            </div>
+        </div>
+    </div>
+
+</form>
+
+@section scripts{  
+    <script type="text/javascript">  
+        $(".custom-file-input").on("change", function () {  
+            var fileName = $(this).val().split("\\").pop();  
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);  
+        });  
+    </script>  
+    <partial name="_ValidationScriptsPartial" />
+}  

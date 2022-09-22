@@ -1,0 +1,46 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2bc3093d-7374-44ee-93fd-848b1483ebac": {
+      "ProjectGuid": "2bc3093d-7374-44ee-93fd-848b1483ebac",
+      "DisplayName": "Core",
+      "ColorIndex": 0
+    },
+    "f8e80fde-9297-4be4-b4a5-2c7d1d0170c3": {
+      "ProjectGuid": "f8e80fde-9297-4be4-b4a5-2c7d1d0170c3",
+      "DisplayName": "Infrastracture",
+      "ColorIndex": 1
+    },
+    "d17fe036-8741-4248-899d-27c18cf938e4": {
+      "ProjectGuid": "d17fe036-8741-4248-899d-27c18cf938e4",
+      "DisplayName": "UI",
+      "ColorIndex": 2
+    },
+    "654e99f9-df7d-46b0-9250-dd4fe1dd9c30": {
+      "ProjectGuid": "654e99f9-df7d-46b0-9250-dd4fe1dd9c30",
+      "DisplayName": "UI",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "66c5e1e3-6ea6-457c-a094-c45cefa30a02": {
+      "ProjectGuid": "66c5e1e3-6ea6-457c-a094-c45cefa30a02",
+      "DisplayName": "Application",
+      "ColorIndex": 4
+    },
+    "671197d3-f7bb-44f4-8057-22c14f55851d": {
+      "ProjectGuid": "671197d3-f7bb-44f4-8057-22c14f55851d",
+      "DisplayName": "Infrastracture",
+      "ColorIndex": 5
+    },
+    "acc5a845-4972-4bbf-a19a-aefd599dd921": {
+      "ProjectGuid": "acc5a845-4972-4bbf-a19a-aefd599dd921",
+      "DisplayName": "MvcCoreUploadAndDisplayImage_Demo",
+      "ColorIndex": 6
+    }
+  },
+  "NextColorIndex": 7
+}
